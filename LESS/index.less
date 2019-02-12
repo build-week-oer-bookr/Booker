@@ -91,6 +91,32 @@ body {
     }
     }
 }
+.container2 {
+    width: 1000px;
+    margin: 0 auto;
+    background: #43d9b8;
+
+    h1 {
+        text-align: center;
+    }
+    .team {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+
+    h2 {
+        padding: 10px;
+    }
+    img {
+        width: 70px;
+        height: 70px;
+    }
+    a {
+        padding: 10px;
+    }
+    }
+}
+
 @media(max-width: 500px) {
     .container {
         width: 100%;
@@ -123,4 +149,23 @@ body {
         }
     }
 
+}
+
+@media (max-width: 500px) {
+    .container2 {
+        width: 100%;
+        margin: 0 auto;
+
+        footer {
+            border: 1px solid red;
+            background: black;
+            display: flex;
+        a {
+            border: 1px solid red;
+            padding: 10px;
+            margin: 0 15px;
+            color: #43d9b8;
+            text-decoration: none;
+        }  
+    }
 }

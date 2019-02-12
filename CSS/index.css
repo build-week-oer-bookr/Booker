@@ -87,6 +87,29 @@ body {
   color: #43d9b8;
   text-decoration: none;
 }
+.container2 {
+  width: 1000px;
+  margin: 0 auto;
+  background: #43d9b8;
+}
+.container2 h1 {
+  text-align: center;
+}
+.container2 .team {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.container2 .team h2 {
+  padding: 10px;
+}
+.container2 .team img {
+  width: 70px;
+  height: 70px;
+}
+.container2 .team a {
+  padding: 10px;
+}
 @media (max-width: 500px) {
   .container {
     width: 100%;
@@ -116,5 +139,11 @@ body {
     justify-content: space-around;
     padding: 10px;
     margin-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .container2 {
+    width: 100%;
+    margin: 0 auto;
   }
 }
