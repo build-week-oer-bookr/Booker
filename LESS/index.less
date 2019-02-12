@@ -7,51 +7,120 @@ body {
     background: url(https://martijnscheijbeler.com/wp-content/uploads/2018/01/books.jpg);
 }
 
+
 /* Container */
 .container {
     width: 1000px;
     margin: 0 auto;
     background: #43d9b8;
-}
 
-header {
+    header {
     text-align: center;
-    font-style: bold;
-    font-size: 40px;
     font-family: 'Source Sans Pro';
-    border: 1px solid red;
+    border: 1px solid black;
     padding: 20px;
-}
-.content {
+
+    nav {
+        border: 1px solid black;
+        background: black;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        padding: 10px;
+     }
+     a {
+        color: #43d9b8;
+        text-decoration: none;
+     }
+    }
+    .content {
     display: flex;
-    padding: 30px;
- h2  {
+    flex-direction: column;
+    padding: 20px;
+    h2  {
     padding: 10px;
     font-size: 40px;
-    align-content: center;
- }
- p {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    }
+    p {
+    text-align: center;
+    color: blue;
     border: 1px solid red;
     padding: 10px;
     width: 100%;
- }
-}
-.login {
+    margin: 0;
+    }
+    }
+    .login {
     text-align: center;
-a {
-    border: 1px solid red;
+    padding: 10px;
+    a {
+    color: #43d9b8;
+    background: black;
     text-decoration: none;
     border-radius: 10px;
     padding: 10px;
     margin: 0 auto;
- }
+     }
+    a:hover {
+        background: #43d9b8;
+        color: black;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    }
+    .who {
+       background: white;
+    p {
+        background: white;
+        text-align: center; 
+        padding: 10px;
+       }
+    }
+    footer {
+        border: 1px solid red;
+        background: black;
+        display: flex;
+    a {
+        border: 1px solid red;
+        padding: 10px;
+        margin: 0 15px;
+        color: #43d9b8;
+        text-decoration: none;
+    }
+    }
 }
-
 @media(max-width: 500px) {
     .container {
         width: 100%;
         margin: 0 auto;
+
+        header {
+            color: black;
+        nav {
+            color: #43d9b8;
+            text-decoration: none;
+        }
+        }
+        .content {
+            padding: 10px;
+        p {
+            padding: 10px;
+        }    
+        .login {
+            margin: 10px;
+        }
+        a {
+            border: 1px solid black;
+        }
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            margin-top: 30px;
+        }
     }
+
 }

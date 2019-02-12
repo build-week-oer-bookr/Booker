@@ -12,43 +12,109 @@ body {
   margin: 0 auto;
   background: #43d9b8;
 }
-header {
+.container header {
   text-align: center;
-  font-style: bold;
-  font-size: 40px;
   font-family: 'Source Sans Pro';
-  border: 1px solid red;
+  border: 1px solid black;
   padding: 20px;
 }
-.content {
+.container header nav {
+  border: 1px solid black;
+  background: black;
   display: flex;
-  padding: 30px;
+  justify-content: space-evenly;
+  font-size: 20px;
+  padding: 10px;
 }
-.content h2 {
+.container header a {
+  color: #43d9b8;
+  text-decoration: none;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.container .content h2 {
   padding: 10px;
   font-size: 40px;
-  align-content: center;
+  text-align: center;
+  margin: 10px;
 }
-.content p {
-  display: flex;
-  justify-content: center;
+.container .content p {
+  text-align: center;
+  color: blue;
   border: 1px solid red;
   padding: 10px;
   width: 100%;
+  margin: 0;
 }
-.login {
+.container .login {
   text-align: center;
+  padding: 10px;
 }
-.login a {
-  border: 1px solid red;
+.container .login a {
+  color: #43d9b8;
+  background: black;
   text-decoration: none;
   border-radius: 10px;
   padding: 10px;
   margin: 0 auto;
 }
+.container .login a:hover {
+  background: #43d9b8;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.container .who {
+  background: white;
+}
+.container .who p {
+  background: white;
+  text-align: center;
+  padding: 10px;
+}
+.container footer {
+  border: 1px solid red;
+  background: black;
+  display: flex;
+}
+.container footer a {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 0 15px;
+  color: #43d9b8;
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   .container {
     width: 100%;
     margin: 0 auto;
+  }
+  .container header {
+    color: black;
+  }
+  .container header nav {
+    color: #43d9b8;
+    text-decoration: none;
+  }
+  .container .content {
+    padding: 10px;
+  }
+  .container .content p {
+    padding: 10px;
+  }
+  .container .content .login {
+    margin: 10px;
+  }
+  .container .content a {
+    border: 1px solid black;
+  }
+  .container footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 30px;
   }
 }
