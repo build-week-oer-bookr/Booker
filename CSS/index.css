@@ -109,23 +109,6 @@ body {
   width: 70px;
   height: 70px;
 }
-.container2 .team a {
-  padding: 10px;
-}
-.container2 footer {
-  border: 1px solid red;
-  background: black;
-  padding: 20px;
-  margin-top: 30px;
-  display: flex;
-}
-.container2 a {
-  border: 1px solid red;
-  padding: 10px;
-  margin: 0 15px;
-  color: #43d9b8;
-  text-decoration: none;
-}
 @media (max-width: 500px) {
   .container {
     width: 100%;
