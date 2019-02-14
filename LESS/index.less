@@ -13,130 +13,116 @@ body {
     width: 1000px;
     margin: 0 auto;
     margin-top: 30px;
-    background: #43d9b8;
+    background: #F0FFFF;
+    opacity: .85;
 
     header{
         width: 100%;
-        .dropdown {
-            z-index: 2;
+        height: 75px;
+        background: gray;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    
+        .menu-button {
+            height: 70px;
+            margin-left: 0;
             position: absolute;
-            left: 25px;
-            cursor: pointer;
-            .dropdown-button {
-              padding: 15px;
-              border: 3px solid #43d9b8;
-              color: #43d9b8;
-              font-size: 20px;
-              font-weight: bold;
-              &:hover {
-                background-color: black;
-              }
-            }
-            .dropdown-content {
-              width: 100%;
-              position: absolute;
-              background-color: black;
-              display: flex;
-              flex-direction: column;
-              align-items: center;  
-              margin-top: 10px;
-              border: 2.5px solid #43d9b8;
-            }
-            .dropdown-link {
-              width: 100%;
-              text-align: center;
-              padding: 15px 0;
-              font-size: 18px;
-              text-decoration: none;
-              color: #43d9b8;
-              &:hover {
-                color: black;
-                background-color: #43d9b8;
-              }
-            }
-            .dropdown-hidden {
-              display: none;
-            }
-          }
-        nav {
-            background: black;
-            display: flex;
-            justify-content: space-evenly;
-            font-size: 20px;
-            padding: 10px;
-         }
-         a {
-            color: #43d9b8;
+            cursor: pointer; 
+        }
+    }
+    .menu {
+        background: gray;
+        display: none;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        width: 350px;
+        height: 100vh;
+        border: 1px solid black;
+        border-left: none;
+        border-bottom: none;
+        z-index: 2;
+        a {
+            color: black;
             text-decoration: none;
+            font-size: 32px;
+            padding: 30px 0;
+            text-align: center;
          }
     }
+
+    .menu--open {
+        display: block;
+    }
+
     
     h1 {
         padding-top: 30px;
         text-align: center;
         font-family: 'Source Sans Pro';
-        padding-bottom: 20px;
-        border-bottom: 1px solid black;
+        font-size: 60px;
+        margin-bottom: 0;
+
     }
-    img {
-        text-align: center;
+    .logo {
+        width: 65%;
+        margin-left: 180px;
     }
     .content {
         display: flex;
         flex-direction: column;
         padding: 20px;
-    h2  {
-        padding: 10px;
-        font-size: 40px;
-        text-align: center;
-        margin: 10px;
-    }
-    p {
-        text-align: center;
-        color: red;
-        border: 1px solid black;
-        padding: 10px;
-        width: 100%;
-        margin: 0;
-    }
+        h2  {
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+            margin: 10px;
+        }
+        p {
+            text-align: center;
+            color: red;
+            border: 1px solid black;
+            padding: 10px;
+            width: 100%;
+            margin: 0;
+        }
     }
     .login {
         text-align: center;
         padding: 10px;
-    a {
-        color: #43d9b8;
-        background: black;
-        text-decoration: none;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 0 auto;
-     }
-    a:hover {
-        background: #43d9b8;
-        color: black;
-        border-radius: 10px;
-        border: 1px solid black;
-    }
+        a {
+            color: #43d9b8;
+            background: black;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        a:hover {
+            background: #43d9b8;
+            color: black;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
     }
     .who {
        background: white;
-    p {
-        background: white;
-        text-align: center; 
-        padding: 10px;
-       }
+        p {
+            background: white;
+            text-align: center; 
+            padding: 10px;
+        }
     }
     footer {
         background: black;
         padding: 20px;
         margin-top: 30px;
         display: flex;
-    a {
-        padding: 10px;
-        margin: 0 15px;
-        color: #43d9b8;
-        text-decoration: none;
-    }
+
+        p {
+            text-align: center;
+        }
     }
 }
 .container2 {
@@ -178,6 +164,10 @@ body {
             top: 0;
             width: 100%;
         }
+        }
+
+        .logo {
+            margin-left: 70px;
         }
         .content {
             padding: 10px;

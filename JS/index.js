@@ -1,15 +1,11 @@
-class Dropdow {
-    constructor(element) {
-        this.elemeent = element;
-        this.button = this.elemeent.querySelector('.dropdown-button');
-        this.content = this.element.querySelector('dropdown-content');
-        this.button.addEventListener('click', () => { this.toggleContent() });
-    }
-    
-    toggleContent() {
-        this.content.classList.toggle('dropdown-hidden');
-    }
+const toggleMenu = () => {
+    menu.classList.toggle('menu--open');
 }
 
+const menu = document.querySelector('.menu');
 
-let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+const menuButton = document.querySelector('.menuButton');
+
+menuButton.addEventListener('click', () => {
+    toggleMenu();
+})
