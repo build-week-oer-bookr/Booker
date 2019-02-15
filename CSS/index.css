@@ -17,12 +17,14 @@ body {
 .container header {
   width: 1000px;
   height: 75px;
-  background: gray;
+  background: #F0FFFF;
+  border-bottom: 1px solid black;
   position: fixed;
   top: 0;
   z-index: 2;
 }
 .container header .menu-button {
+  opacity: 0.99;
   height: 70px;
   margin-left: 0;
   position: absolute;
@@ -120,22 +122,44 @@ body {
 .container2 {
   width: 1000px;
   margin: 0 auto;
-  background: #43d9b8;
+  background: #F0FFFF;
+  opacity: 0.85;
 }
 .container2 h1 {
+  padding-top: 30px;
   text-align: center;
 }
 .container2 .team {
   display: flex;
+  text-align: center;
   justify-content: center;
+  flex-direction: column;
   margin: 20px auto;
 }
 .container2 .team h2 {
   padding: 10px;
 }
 .container2 .team img {
+  margin: 0 auto;
   width: 70px;
   height: 70px;
+}
+.container2 .team a {
+  margin-top: 10px;
+}
+.container2 .team footer {
+  background: black;
+  display: flex;
+}
+.container2 .team footer nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container2 .team footer a {
+  padding: 10px;
+  margin: 0 20px;
+  color: #43d9b8;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   .container {

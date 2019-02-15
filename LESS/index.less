@@ -7,7 +7,6 @@ body {
     background: url(https://martijnscheijbeler.com/wp-content/uploads/2018/01/books.jpg);
 }
 
-
 /* Container */
 .container {
     width: 1000px;
@@ -19,12 +18,14 @@ body {
     header{
         width: 1000px;
         height: 75px;
-        background: gray;
+        background:#F0FFFF;
+        border-bottom: 1px solid black;
         position: fixed;
         top: 0;
         z-index: 2;
     
         .menu-button {
+            opacity: .99;
             height: 70px;
             margin-left: 0;
             position: absolute;
@@ -42,6 +43,7 @@ body {
         border-left: none;
         border-bottom: none;
         z-index: 2;
+    
         a {
             display: flex;
             justify-content: center;
@@ -52,11 +54,11 @@ body {
             text-align: center;
          }
     }
-
+    
     .menu--open {
         display: block;
     }
-
+    
     
     h1 {
         padding-top: 30px;
@@ -129,24 +131,47 @@ body {
 .container2 {
     width: 1000px;
     margin: 0 auto;
-    background: #43d9b8;
+    background: #F0FFFF;
+    opacity: .85;
 
     h1 {
+        padding-top: 30px;
         text-align: center;
     }
        
     .team {
         display: flex;
+        text-align: center;
         justify-content: center;
+        flex-direction: column;
         margin: 20px auto;
 
-    h2 {
-        padding: 10px;
+        h2 {
+            padding: 10px;
+        }
+        img {
+            margin: 0 auto;
+            width: 70px;
+            height: 70px;
+        }
+        a {
+            margin-top: 10px;
+        }
+
+    footer {
+        background: black;
+        display: flex;
+        
+        nav {
+            display: flex;                justify-content: space-evenly;
+        }
+        a {
+            padding: 10px;                margin: 0 20px;
+            color: #43d9b8;
+            text-decoration: none;
+        }  
     }
-    img {
-        width: 70px;
-        height: 70px;
-    }
+
     }
 }
 
