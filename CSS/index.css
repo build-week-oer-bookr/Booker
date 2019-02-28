@@ -1,0 +1,223 @@
+/* Styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background: url(https://martijnscheijbeler.com/wp-content/uploads/2018/01/books.jpg);
+}
+/* Container */
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #F0FFFF;
+  opacity: 0.85;
+}
+.container header {
+  width: 1000px;
+  height: 75px;
+  background: #F0FFFF;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.container header .menu-button {
+  opacity: 0.99;
+  height: 70px;
+  margin-left: 0;
+  position: absolute;
+  cursor: pointer;
+}
+.container .menu {
+  background: gray;
+  display: none;
+  position: fixed;
+  top: 75px;
+  width: 350px;
+  height: 100vh;
+  border: 1px solid black;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+.container .menu a {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  font-size: 32px;
+  padding: 30px 0;
+  text-align: center;
+}
+.container .menu--open {
+  display: block;
+}
+.container h1 {
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Source Sans Pro';
+  font-size: 60px;
+  margin-bottom: 0;
+}
+.container .logo {
+  width: 65%;
+  margin-left: 180px;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.container .content h2 {
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+  margin: 10px;
+}
+.container .content p {
+  text-align: center;
+  color: red;
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  margin: 0;
+}
+.container .login {
+  text-align: center;
+  padding: 10px;
+}
+.container .login a {
+  color: #43d9b8;
+  background: black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.container .login a:hover {
+  background: #43d9b8;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.container .who {
+  background: white;
+}
+.container .who p {
+  background: white;
+  text-align: center;
+  padding: 10px;
+}
+.container footer {
+  background: black;
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+}
+.container footer p {
+  text-align: center;
+}
+.container2 {
+  width: 1000px;
+  margin: 0 auto;
+  background: #F0FFFF;
+  opacity: 0.85;
+}
+.container2 h1 {
+  padding-top: 30px;
+  text-align: center;
+}
+.container2 .team {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+}
+.container2 .team h2 {
+  padding: 10px;
+}
+.container2 .team img {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+}
+.container2 .team a {
+  margin-top: 10px;
+}
+.container2 .team footer {
+  background: black;
+  display: flex;
+}
+.container2 .team footer nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container2 .team footer a {
+  padding: 10px;
+  margin: 0 20px;
+  color: #43d9b8;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  .container header {
+    width: 96%;
+    color: black;
+  }
+  .container header nav {
+    color: #43d9b8;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .container .logo {
+    margin-left: 70px;
+  }
+  .container .content {
+    padding: 10px;
+  }
+  .container .content p {
+    padding: 10px;
+  }
+  .container .content .login {
+    margin: 10px;
+  }
+  .container .content a {
+    border: 1px solid black;
+  }
+  .container footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .container2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container2 h1 {
+    padding-top: 20px;
+  }
+  .container2 footer {
+    background: black;
+    display: flex;
+  }
+  .container2 footer nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .container2 footer a {
+    padding: 10px;
+    margin: 0 20px;
+    color: #43d9b8;
+    text-decoration: none;
+  }
+}
